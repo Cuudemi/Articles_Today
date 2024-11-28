@@ -47,6 +47,8 @@
 **Relationships:**
 - `source`: relationship with `Source` (back_populates="articles")
 
+---
+
 ### Таблица с источниками
 В таблице с источниками хранится информация о различных источниках, включая тематику и ссылки. 
 | Column   | Type    | Description           |
@@ -58,6 +60,8 @@
 
 **Relationships:**
 - `articles`: relationship with `Article` (back_populates="source")
+
+---
 
 ### Таблица с тематиками
 | Column   | Type    | Description           |
