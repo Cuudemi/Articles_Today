@@ -1,5 +1,6 @@
 *.png
 .vs
+*.jpg
 
 # Distribution / packaging
 .Python
