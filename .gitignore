@@ -1,3 +1,6 @@
+!pubspec.yaml
+!analysis_options.yaml
+
 *.png
 .vs/
 *.jpg
