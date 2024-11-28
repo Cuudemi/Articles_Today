@@ -1,5 +1,5 @@
 *.png
-.vs
+.vs/
 *.jpg
 
 # Distribution / packaging
