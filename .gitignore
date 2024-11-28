@@ -1,3 +1,6 @@
+*.png
+.vs
+
 # Distribution / packaging
 .Python
 build/
