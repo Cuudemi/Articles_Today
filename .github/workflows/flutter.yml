@@ -22,7 +22,7 @@ jobs:
           channel: 'stable'
           
       - name: Go to app folder
-        run: cd app
+        run: ls
       - name: Get dependencies
         run: flutter pub get
 
