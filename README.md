@@ -42,7 +42,7 @@
 | id_source   | Integer      | Foreign Key (source.id)    |
 | content     | String       |                            |
 | url         | String       |                            |
-| theme_name  | String       |  Foreign Key (theme.name)  |
+| theme_name  | String       |    |
 
 **Relationships:**
 - `source`: relationship with `Source` (back_populates="articles")
@@ -61,9 +61,45 @@
 **Relationships:**
 - `articles`: relationship with `Article` (back_populates="source")
 
----
+## Проектирование приложения
+### Проектирование пользовательского интерфейса приложения
+Прототип разработан с помощью сервиса Figma.
 
-### Таблица с тематиками
-| Column   | Type    | Description           |
-|----------|---------|-----------------------|
-| name     | String  | Primary Key           |
+<table>
+  <tr>
+    <td align="center" width="230">
+      <img src="https://github.com/user-attachments/assets/75e80f5f-f471-4e3d-9b58-343244a582a1" alt="Стартовая страница">
+    </td>
+    <td align="center" width="230">
+      <img src="https://github.com/user-attachments/assets/f66536e2-562a-4b07-b738-292b0f18c7e0" alt="Выбор тематики">
+    </td>
+    <td align="center" width="230">
+      <img src="https://github.com/user-attachments/assets/f9379e33-2ae5-4e87-9ec5-74a8fcdabb97" alt="Сегодняшняя статья">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="230">Стартовая страница</td>
+    <td align="center" width="230">Выбор тематики</td>
+    <td align="center" width="230">Сегодняшняя статья</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td align="center" width="230">
+      <img src="https://github.com/user-attachments/assets/f55bcbe5-80ff-41c0-85d6-78e3a1c25572" alt="Настройки">
+    </td>
+    <td align="center" width="230">
+      <img src="https://github.com/user-attachments/assets/dd2adc4d-d058-4337-90ca-653c01165a75" alt="Архив">
+    </td>
+    <td width="230"></td>
+  </tr>
+    <tr>
+    <td align="center" width="230">Настройки</td>
+    <td align="center" width="230">Архив</td>
+      <td align="center" width="230"></td>
+  </tr>
+</table>
+
+### Проектирование архитектуры приложения 
+
+![architecture](https://github.com/user-attachments/assets/599c199f-2b1e-4679-8c0f-fde62521c124)
