@@ -47,7 +47,6 @@ def delete_article(id: int):
     deleted_article = rep.ArticleRepository.delete_article(id)
     return deleted_article
 
-
 @source_router.get("/source/get_all_available_themes/")
 def get_all_available_themes():
     available_themes = rep.SourceRepository.get_all_themes()
